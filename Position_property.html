@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="ie-edge">
+    <title>Position</title>
+    <style>
+      body,html{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        height: 400%; /*화면의 4배까지 스크롤 할 수 있다.*/
+        background-color: red;
+      }
+      /* Position Fixed
+
+      #boxOne{
+        height: 300px;
+        width: 300px;
+        background-color:yellow;
+        position: static; //*default 값.
+      }
+      /
+      #boxTwo{
+        height: 200px;
+        width: 50%;
+        background-color:blue;
+        position: fixed; //스크롤에 고정.
+        bottom: 100px;
+        left: 200px;
+        right:200px;
+      } */
+
+      .abs-box{
+        height: 400px;
+        width: 400px;
+        background-color: yellow;
+        position: absolute;
+      }
+      .abs-child{
+      height: 100px;
+      width: 100px;
+      background-color: green;
+      position: absolute; /*부모 포지션 relative: 부모포지션 안에서 상대적으로 움직임. 부모포지션x: body에 상대적으로 움직임.*/
+      right: 30px;
+      top: 20px;
+      }
+      </style>
+
+  </head>
+  <body>
+
+    <div class="abs-box">
+      <div class="abs-child"></div>
+    </div>
+
+    <!-- Position Fixed
+    <div id="boxOne">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+      <div class="box-child"></div>
+    </div>
+  -->
+  </body>
+</html>
+
+<!--  포지션: fixed(스크롤고정), relative, absolute(부모 or body relative포지션에 상대적으로 위치), static(디폴트). -->

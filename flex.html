@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex</title>
+    <style>
+      html, body{
+        height: 100%;
+      }
+      .father{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: no-wrap-reverse;
+      }
+      .box{
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <div class="father">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+    </div>
+
+  </body>
+</html>
+<!-- 플렉스를 사용할 때에는 부모 클래스에만 적용. 칠드런 박스에 말할필요 없음.
+
+justify-content(수평조정): center; , space-between, space-around
+align-items(수직조정): flex-start; flex-end, center
+flex-direction: row(item 도 수평조정); column(item 수직조정), row-reverse(item들의 순서 거꾸로);
+flex-wrap: wrap; 폭을 유지한채 새로운 라인을 형성. flex의 default값은 no wrap. 폭 상관없이 다 줄어듬.
+wrap-reverse: 위 아래 순서 변경
+
+flex -> father: children 조정가능.
+    -> children: 그 안에 있는 item 조정가능.
+
+-->

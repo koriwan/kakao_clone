@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="ie-edge">
+    <title>Inline Example</title>
+    <style media="screen">
+      .box{
+        background-color: red; /*배경색*/
+        width: 200px; /*display가 block일 때만 지정가능*/
+        height: 200px; /*display가 block일 때만 지정가능*/
+        border: 2px solid black;
+        display: inline;
+
+    </style>
+  </head>
+  <body>
+    <span class="box">1</span>
+    <span class="box">1</span>
+    <span class="box">1</span>
+
+  </body>
+</html>
+/*  1. block(default값)은 element 의 크기와 상관없이 옆에 다른 element가 허용되지 않는다.
+    2. inline-block 일 경우 옆에 다른 element가 배치가능하다.
+    3. inline 일 경우 박스 사라지며 텍스트로 인식된다. */

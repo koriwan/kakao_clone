@@ -1,0 +1,9 @@
+h1.class{
+property-name: value;
+}
+
+/* h1{}: 괄호가 selector로 태그, 링크, 문단, 헤더, 푸터가 될 수 있음.
+#name: id. .name: class  */
+selector(id, class, tagname){
+  property-name: value;
+}
